@@ -1,0 +1,241 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Partidul Acțiune Ordine și Progres – AOP">
+<meta name="theme-color" content="#092e4b">
+<title>AOP | Acțiune Ordine și Progres</title>
+<style>
+:root{--navy:#092e4b;--orange:#f15b19;--light:#f3f6f8}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Arial,sans-serif;color:#273747;line-height:1.7}
+.container{width:min(1160px,90%);margin:auto}
+header{background:var(--navy);color:white;position:sticky;top:0;z-index:10}
+.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:15px}
+.brand{display:flex;align-items:center;gap:12px;color:white;text-decoration:none}
+.brand img{width:60px;height:60px;object-fit:contain;background:white;border-radius:5px}
+.brand span{color:var(--orange)}
+nav{display:flex;gap:17px}
+nav a{color:white;text-decoration:none;font-size:13px}
+nav a:hover{color:#ff7935}
+.menu{display:none;background:none;color:white;border:0;font-size:26px}
+.hero{background:linear-gradient(120deg,#092e4b,#174c70);color:white;padding:85px 0}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:45px;align-items:center}
+.hero h1{font-size:clamp(40px,6vw,68px);line-height:1.1}
+.hero h1 span{color:#ff762f}
+.hero p{font-size:18px;color:#e2eaf0}
+.hero-logo{background:white;padding:18px;border-radius:15px}
+.hero-logo img{width:100%;display:block}
+.eyebrow,.label{color:var(--orange);font-weight:bold;letter-spacing:2px;font-size:12px}
+.btn{display:inline-block;background:var(--orange);color:white;padding:12px 22px;border-radius:5px;text-decoration:none;margin-top:15px}
+section{padding:75px 0}
+h2{font-size:34px;color:var(--navy);line-height:1.2}
+.lead{color:#6c7a88;font-size:18px;max-width:800px}
+.light{background:var(--light)}
+.about-grid,.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+.box{background:var(--light);padding:28px;border-left:5px solid var(--orange);border-radius:8px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:30px}
+.card{background:white;padding:24px;border-radius:9px;border-bottom:3px solid var(--orange);box-shadow:0 5px 20px #00000009}
+.card h3{color:var(--navy)}
+.number{font-size:28px;color:var(--orange);font-weight:bold}
+details{background:white;padding:18px 22px;margin:12px 0;border:1px solid #e4e9ed;border-radius:8px}
+summary{font-weight:bold;color:var(--navy);cursor:pointer;font-size:16px}
+details[open]{border-left:4px solid var(--orange)}
+.clause{margin:15px 0}
+.clause strong{color:var(--navy)}
+.leadership{background:var(--navy);color:white;padding:30px;border-radius:10px;text-align:center}
+.leadership h3{color:#ff7935}
+.news{background:white;padding:25px;border-radius:10px}
+footer{background:#071f34;color:#dce5ed;padding:45px 0 20px}
+footer h3,footer h4{color:white}
+footer a{display:block;color:#dce5ed;text-decoration:none;margin:7px 0}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:25px}
+.bottom{border-top:1px solid #ffffff30;margin-top:25px;padding-top:15px;font-size:12px}
+@media(max-width:850px){
+.menu{display:block}
+nav{display:none;position:absolute;top:82px;left:0;width:100%;background:var(--navy);padding:20px;flex-direction:column}
+nav.open{display:flex}
+.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+.hero-logo{max-width:420px;margin:auto}
+.cards{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:550px){
+.cards,.footer-grid{grid-template-columns:1fr}
+section{padding:55px 0}
+h2{font-size:29px}
+}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="#acasa">
+<img src="sigla-aop.png" alt="Sigla oficială AOP">
+<strong>AOP<br><span>ACȚIUNE ORDINE ȘI PROGRES</span></strong>
+</a>
+<button class="menu" aria-label="Meniu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+<nav>
+<a href="#acasa">Acasă</a><a href="#despre">Despre noi</a>
+<a href="#principii">Principii</a><a href="#program">Program politic</a>
+<a href="#conducere">Conducere</a><a href="#noutati">Noutăți</a>
+<a href="#contact">Contact</a>
+</nav>
+</div>
+</header>
+
+<main>
+<div class="hero" id="acasa">
+<div class="container hero-grid">
+<div>
+<div class="eyebrow">PARTIDUL ACȚIUNE ORDINE ȘI PROGRES</div>
+<h1>ACȚIUNE.<br>ORDINE.<br><span>PROGRES.</span></h1>
+<p>Un proiect politic bazat pe principii democratice, responsabilitate publică, competență și respectarea valorilor fundamentale.</p>
+<a class="btn" href="#program">Descoperă programul politic</a>
+</div>
+<div class="hero-logo"><img src="sigla-aop.png" alt="Sigla AOP"></div>
+</div>
+</div>
+
+<section id="despre">
+<div class="container about-grid">
+<div>
+<div class="label">CINE SUNTEM</div>
+<h2>Despre partid</h2>
+<p>Partidul Acțiune Ordine și Progres (AOP) este o organizație politică înființată pe baza principiilor democratice și valorilor europene.</p>
+<p>Partidul își asumă responsabilitatea respectării intereselor tuturor oamenilor, indiferent de categoria socio-profesională, etnie, sex, rasă sau poziție socială.</p>
+<p>AOP promovează integritatea, suveranitatea României, dezvoltarea durabilă și implicarea cetățenilor în viața publică.</p>
+</div>
+<div class="box">
+<h3>Viziunea AOP</h3>
+<p>Un stat modern, eficient și responsabil, capabil să răspundă provocărilor societății românești.</p>
+<p>O societate în care educația, sănătatea, economia, competența și respectarea drepturilor fundamentale reprezintă priorități.</p>
+</div>
+</div>
+</section>
+
+<section class="light" id="principii">
+<div class="container">
+<div class="label">VALORILE NOASTRE</div>
+<h2>Principiile AOP</h2>
+<p class="lead">Direcțiile fundamentale ale programului politic.</p>
+<div class="cards">
+<div class="card"><div class="number">01</div><h3>Democrație</h3><p>Respectarea Constituției, a legilor și a separării puterilor în stat.</p></div>
+<div class="card"><div class="number">02</div><h3>Integritate</h3><p>Responsabilitate, moralitate și transparență în viața publică.</p></div>
+<div class="card"><div class="number">03</div><h3>Competență</h3><p>Instituții publice organizate pe criterii meritocratice.</p></div>
+<div class="card"><div class="number">04</div><h3>Dezvoltare</h3><p>Economie competitivă și dezvoltare echilibrată urbană și rurală.</p></div>
+<div class="card"><div class="number">05</div><h3>Solidaritate</h3><p>Respectarea intereselor și drepturilor tuturor cetățenilor.</p></div>
+<div class="card"><div class="number">06</div><h3>Identitate</h3><p>Respectarea valorilor românești și a diversității europene.</p></div>
+</div>
+</div>
+</section>
+
+<section id="program">
+<div class="container">
+<div class="label">DOCUMENT OFICIAL</div>
+<h2>Programul politic AOP</h2>
+<p class="lead">Programul politic al Partidului „Acțiune Ordine și Progres”.</p>
+
+<details open>
+<summary>ARTICOLUL 1 – PRINCIPII</summary>
+<p class="clause"><strong>Art. 1.1.</strong> Partidul Acțiune Ordine și Progres (AOP) este o organizație civică ce urmărește numai obiective politice, înființată pe baza principiilor democratice și valorilor europene, fiind un partid politic ce își asumă responsabilitatea respectării intereselor tuturor oamenilor, indiferent de categoria socio-profesională din care aceștia fac parte, etnie, sex, rasă sau poziție socială.</p>
+<p class="clause"><strong>Art. 1.2.</strong> Acțiune Ordine și Progres își asumă și însușește, ca obiective prioritare, promovarea și respectarea valorilor fundamentale ale neamului românesc.</p>
+<p class="clause"><strong>Art. 1.3. Principii:</strong></p>
+<p class="clause"><strong>a)</strong> Propășirea materială și spirituală a națiunii române, promovarea integrității și suveranității României, unitatea teritorială și afirmarea valorilor românești în familia europeană.</p>
+<p class="clause"><strong>b)</strong> Verticalitate și moralitate în viața publică, pace, prosperitate, administrație performantă și învățământ care să permită viitoarelor generații să prospere și să trăiască în armonie.</p>
+<p class="clause"><strong>c)</strong> Implicarea cetățenilor în factorul decizional politic, reprezentarea intereselor acestora și apropierea deciziei politice de cetățean.</p>
+<p class="clause"><strong>d)</strong> Un stat modern, suplu, bazat pe competență, performanță, responsabilitate, solidaritate și respectarea valorilor naționale.</p>
+<p class="clause"><strong>e)</strong> Separarea totală a puterilor în stat, o presă independentă, neaservită politic, informare corectă și răspunderea magistraților și demnitarilor.</p>
+<p class="clause"><strong>f)</strong> Depolitizarea instituțiilor publice, reorganizarea acestora pe principii meritocratice și de competență, eliminarea nepotismului, corupției și incompetenței.</p>
+<p class="clause"><strong>g)</strong> Dezvoltare durabilă în mediul urban și rural, sprijinirea antreprenoriatului și siguranței alimentare.</p>
+<p class="clause"><strong>h)</strong> Crearea de locuri de muncă și posibilități echitabile de dezvoltare pentru toți cetățenii.</p>
+<p class="clause"><strong>i)</strong> Sprijinirea Educației, Sănătății și Sportului ca piloni ai dezvoltării națiunii.</p>
+<p class="clause"><strong>j)</strong> Promovarea turismului, agroturismului și identității culturale, într-o Europă bazată pe principiul „Unitate în Diversitate”.</p>
+<p class="clause"><strong>k)</strong> Un sistem de salarizare și pensii echitabil, sustenabil și performant, care să răspundă discrepanțelor dintre nivelurile minime și maxime.</p>
+<p class="clause"><strong>l)</strong> Susținerea apartenenței României la Uniunea Europeană și NATO ca partener egal, o mai bună reprezentare a intereselor țării și renegocierea contractelor prejudiciatoare pentru statul român.</p>
+<p class="clause"><strong>m)</strong> Dezvoltarea infrastructurii terestre, navale, portuare, aeriene și feroviare și interconectarea acestora.</p>
+<p class="clause"><strong>n)</strong> Independență energetică, accesul cetățenilor la resurse la prețuri accesibile și dezvoltarea unei Românii puternic industrializate.</p>
+</details>
+
+<details>
+<summary>ARTICOLUL 2 – OBIECTIVE POLITICE</summary>
+<p class="clause"><strong>Art. 2.1.</strong> Partidul AOP urmărește obiective strict politice.</p>
+<p class="clause"><strong>Art. 2.2.</strong> Partidul urmărește implementarea de politici publice, economice, sociale și diplomatice adecvate contextului social actual, pentru realizarea următoarelor obiective:</p>
+<p class="clause"><strong>a)</strong> Respectarea Constituției și a legilor țării, a separării puterilor în stat și susținerea unei prese independente.</p>
+<p class="clause"><strong>b)</strong> Apărarea intereselor și integrității țării în fața provocărilor politice, instituționale, statale sau de orice altă natură.</p>
+<p class="clause"><strong>c)</strong> Economie liberă, cu cât mai puțină implicare politică din partea autorităților statului, și administrație publică descentralizată.</p>
+<p class="clause"><strong>d)</strong> Respectarea și promovarea drepturilor fundamentale, inclusiv dreptul la proprietate privată.</p>
+<p class="clause"><strong>e)</strong> Creșterea nivelului de trai prin oportunități multiple de dezvoltare și progres.</p>
+<p class="clause"><strong>f)</strong> Promovarea și susținerea învățământului, sănătății și sportului, prin conceptul „O minte sănătoasă, un trup sănătos”.</p>
+<p class="clause"><strong>g)</strong> Revitalizarea culturii, obiceiurilor și datinilor românești și respectarea identității și culturii tuturor popoarelor.</p>
+<p class="clause"><strong>h)</strong> Garantarea drepturilor omului și libertăților fundamentale: expresie, conștiință, religie, apartenență politică etc.</p>
+<p class="clause"><strong>i)</strong> Susținerea agriculturii prin reducerea fiscalității, reînființarea sistemelor de irigații, finanțare avantajoasă, garanții de stat și subvenții.</p>
+<p class="clause"><strong>j)</strong> Susținerea turismului prin promovarea tradițiilor, monumentelor de cult și zonelor pitorești și facilități pentru micii antreprenori.</p>
+<p class="clause"><strong>k)</strong> Eficientizarea statului prin descentralizare și apropierea deciziei politice și administrative de cetățean.</p>
+<p class="clause"><strong>l)</strong> Tranziția către energii regenerabile, reducerea emisiilor poluante, împădurirea și măsuri pentru dezvoltarea unui stat verde.</p>
+</details>
+<p><em>Text transcris și corectat ortografic după programul furnizat. Se recomandă confruntarea cu exemplarul original semnat înainte de publicarea ca document oficial.</em>
+</div>
+</section>
+
+<section class="light" id="conducere">
+<div class="container">
+<div class="label">ORGANIZARE</div>
+<h2>Conducerea partidului</h2>
+<div class="leadership">
+<h3>Președintele Partidului AOP</h3>
+<p>Informațiile privind conducerea vor fi publicate ulterior.</p>
+<p>Secțiune în curs de completare.</p>
+</div>
+</div>
+</section>
+
+<section id="noutati">
+<div class="container">
+<div class="label">INFORMAȚII OFICIALE</div>
+<h2>Noutăți și comunicate</h2>
+<div class="news">
+<h3>Pagina oficială AOP</h3>
+<p>Aici vor fi publicate comunicatele, anunțurile și informațiile oficiale ale partidului.</p>
+<p>Conținutul va fi actualizat ulterior.</p>
+</div>
+</div>
+</section>
+
+<section class="light" id="contact">
+<div class="container contact-grid">
+<div>
+<div class="label">ȚINEM LEGĂTURA</div>
+<h2>Contact</h2>
+<p>Informațiile oficiale de contact vor fi adăugate ulterior.</p>
+</div>
+<div class="box">
+<h3>Partidul AOP</h3>
+<p>Acțiune Ordine și Progres</p>
+<p>România</p>
+<p>E-mail: în curs de completare</p>
+<p>Telefon: în curs de completare</p>
+</div>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="container">
+<div class="footer-grid">
+<div><h3>AOP – Acțiune Ordine și Progres</h3><p>Principii democratice, responsabilitate și dezvoltare.</p></div>
+<div><h4>Navigare</h4><a href="#despre">Despre noi</a><a href="#principii">Principii</a><a href="#program">Program politic</a></div>
+<div><h4>Informații</h4><a href="#conducere">Conducere</a><a href="#noutati">Noutăți</a><a href="#contact">Contact</a></div>
+</div>
+<div class="bottom">© 2026 AOP – Acțiune Ordine și Progres. Toate drepturile rezervate.</div>
+</div>
+</footer>
+
+<script>
+document.querySelectorAll('nav a').forEach(a=>{
+a.addEventListener('click',()=>document.querySelector('nav').classList.remove('open'));
+});
+</script>
+</body>
+</html>
